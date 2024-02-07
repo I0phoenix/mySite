@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Poem</title>
+    <link rel="stylesheet" href="body.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#sidebar").load("sidebar.html");
+        });
+    </script>
 </head>
-<body>
-    <img src="UniversityLogo.png" alt="Logo of The University of Arizona">
-    <span>
-        <a href="index.html">Home Page</a> | <a href="hometown.html">Visit My Hometown Page</a> |
-        <a href="gallery.html">See My Photo Gallery</a> | <a href="poem.html">Poem by Emily Dickinson</a>
-    </span>
+<body class="bgbody">
+<div id="header"></div>
+<div id="sidebar"></div>
     <p>
         I'm Nobody! Who are you? <br>
         Are you - Nobody - Too? <br>
@@ -25,5 +32,6 @@
     <p>
         <cite>By Emily Dickinson (1891)</cite>
     </p>
+<div id="footer"></div>
 </body>
 </html>

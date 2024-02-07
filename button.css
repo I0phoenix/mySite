@@ -1,0 +1,12 @@
+.button:link, .button:visited{
+    background-color: #1d1847;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.button:hover, a.button:active {
+    background-color: #2941a3;
+}

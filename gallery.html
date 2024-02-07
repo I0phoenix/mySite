@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title>Gallery</title>
     <link rel="stylesheet" href="tableBorder.css">
+    <link rel="stylesheet" href="body.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+            $("#sidebar").load("sidebar.html");
+        });
+    </script>
 </head>
-<body>
-    <img src="UniversityLogo.png" alt="Logo of The University of Arizona">
-    <span>
-        <a href="index.html">Home Page</a> | <a href="hometown.html">Visit My Hometown Page</a> |
-        <a href="gallery.html">See My Photo Gallery</a> | <a href="poem.html">Poem by Emily Dickinson</a>
-    </span>
+<body class="bgbody">
+<div id="header"></div>
+<div id="sidebar"></div>
     <table>
         <caption>Red Rocks, CO</caption>
         <tr>
@@ -37,5 +44,6 @@
             <td colspan="3">Copyright &#169; 2019 Zippy Photographers</td>
         </tr>
     </table>
+<div id="footer"></div>
 </body>
 </html>
